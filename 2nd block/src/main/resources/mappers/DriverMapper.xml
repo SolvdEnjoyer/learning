@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="src/main/java/service/ServiceDriverMapper">
+  
+  		<resultMap type="Driver" id="resultAll">
+  			<id property="id" column="id"/>
+  			<result property="firstName"  column="first_name"/>
+  			<result property="lastName"  column="last_name"/>
+  			<result property="license" column="license"/> 
+  		</resultMap>
+  		
+  		<select id="selectAllDriver" resultType="Driver" resultMap = "resultAll">
+			  	SELECT * FROM  Driver
+			  	
+  		</select>
+  		
+  		<insert id="insertDriver" parameterType="Driver" keyProperty="id" useGeneratedKeys="false">
+  				INSERT INTO Driver VALUES(#{id}, #{firstName}, #{lastName},#{license})
+  		</insert>
+  		
+  		<update id="updateDriver" >
+  			UPDATE Driver SET 
+  			first_name=#{firstName},
+  			last_name=#{lastName},
+  			license=#{license}
+  			WHERE id = #{id}
+  		</update>
+  		
+  		<delete id="deleteDriver">
+  			DELETE FROM Driver WHERE id=#{id}
+  		</delete>
+  		
+ </mapper>  

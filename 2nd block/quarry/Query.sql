@@ -88,27 +88,11 @@ SELECT Car.model,
     
     
 SELECT COUNT(type) FROM detail;
-SELECT SUM(price) AS "All prices" FROM details_shop_service_centre; 
+SELECT SUM(price) AS "Sum prices" FROM details_shop_service_centre; 
 SELECT AVG(price) AS "Average price" FROM details_shop_service_centre; 
-SELECT MIN(price) AS "Average price" FROM details_shop_service_centre; 
-SELECT MAX(price) AS "Average price" FROM details_shop_service_centre;     
+SELECT MIN(price) AS "Min price" FROM details_shop_service_centre; 
+SELECT MAX(price) AS "Max price" FROM details_shop_service_centre;     
 SELECT type FROM detail LIMIT 1;
 SELECT type FROM detail ORDER BY id DESC LIMIT 1;    
 
-SELECT COUNT(type) FROM detail HAVING COUNT(id) > 2;
-SELECT SUM(price), details_shop_id AS "Details costing more than 100" FROM details_shop_service_centre GROUP BY details_shop_id  HAVING MIN(price) > 100;
-SELECT AVG(price) AS "Average price" FROM details_shop_service_centre; 
-SELECT MIN(price) AS "Average price" FROM details_shop_service_centre; 
-SELECT MAX(price) AS "Average price" FROM details_shop_service_centre;     
-SELECT type FROM detail LIMIT 1;
-SELECT type FROM detail ORDER BY id DESC LIMIT 1;    
-     
-     
-     
-     
-     
-     
-     
 
-select * from Detail; 
-select * from Detail_details_shop; 

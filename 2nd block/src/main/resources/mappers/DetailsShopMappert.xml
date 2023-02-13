@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="src/main/java/service/ServiceDetailsShopMapper">
+  
+  		<resultMap type="DetailsShop" id="resultAll">
+  			<id property="id" column="id"/>
+  			<result property="name"  column="name"/>
+  			<result property="location"  column="location"/> 
+  		</resultMap>
+  		
+  		<select id="selectAllDetailsShop" resultType="DetailsShop" resultMap = "resultAll">
+			  	SELECT * FROM  Details_shop
+			  	
+  		</select>
+  		
+  		<insert id="insertDetailsShop" parameterType="DetailsShop" keyProperty="id" useGeneratedKeys="false">
+  				INSERT INTO Details_shop VALUES(#{id}, #{name}, #{location})
+  		</insert>
+  		
+  		<update id="updateDetailsShop" >
+  			UPDATE Details_shop SET 
+  			name=#{name},
+  			locaton=#{location},
+  			WHERE id = #{id}
+  		</update>
+  		
+  		<delete id="deleteDetailsShop">
+  			DELETE FROM Details_shop WHERE id=#{id}
+  		</delete>
+  		
+ </mapper>  
