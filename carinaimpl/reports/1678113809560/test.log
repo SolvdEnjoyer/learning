@@ -1,0 +1,20 @@
+[2023-03-06 02:43:29] [1] [INFO] 
+============= Test configuration =============
+url=https://new.mechs.su/
+env=DEMO
+selenium_url=http://192.168.100.9:4444
+project_report_directory=./reports
+max_screen_history=10
+selenium_url=http://192.168.100.9:4444
+
+------------- Driver capabilities -----------
+capabilities.browserName=chrome
+capabilities.providerOptions=options
+================================================
+
+[2023-03-06 02:43:29] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-06 02:43:30] [1] [INFO] Set thread-count=1
+[2023-03-06 02:43:30] [1] [INFO] Set data-provider-thread-count=1
+[2023-03-06 02:43:30] [1] [INFO] CARINA_CORE_VERSION: 8.0.7
+[2023-03-06 02:43:42] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2023-03-06 02:43:42] [1] [INFO] RESULT #1: TEST [Surefire test - loginTest] PASS [log=file://C:\Users\user\Desktop\laba\carinaimpl\.\reports\1678113809560/20b3474a-a8a4-471b-b1f3-5f4d17aea635/test.log]

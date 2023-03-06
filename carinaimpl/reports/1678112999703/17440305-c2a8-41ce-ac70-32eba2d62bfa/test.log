@@ -1,0 +1,8 @@
+[2023-03-06 02:30:01] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-06 02:30:01] [1] [INFO] TEST [Surefire test - loginTest] STARTED at [18:30:01 2023-03-06]
+[2023-03-06 02:30:01] [1] [INFO] Starting driver session...
+[2023-03-06 02:30:02] [1] [INFO] Driver session started.
+[2023-03-06 02:30:02] [1] [INFO] INFO: opening url 'https://new.mechs.su/'
+[2023-03-06 02:30:09] [1] [INFO] PASS: element 'entranceButton' is clicked.
+[2023-03-06 02:30:09] [1] [INFO] true
+[2023-03-06 02:30:09] [1] [INFO] TEST [Surefire test - loginTest] PASSED at [18:30:09 2023-03-06]

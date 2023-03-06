@@ -1,0 +1,10 @@
+[2023-03-06 02:40:43] [1] [WARN] Reporting disabled: using no op test run registrar
+[2023-03-06 02:40:43] [1] [INFO] TEST [Surefire test - loginTest] STARTED at [18:40:43 2023-03-06]
+[2023-03-06 02:40:43] [1] [INFO] Starting driver session...
+[2023-03-06 02:40:45] [1] [INFO] Driver session started.
+[2023-03-06 02:40:45] [1] [INFO] INFO: opening url 'https://new.mechs.su/'
+[2023-03-06 02:40:50] [1] [INFO] PASS: element 'entranceButton' is clicked.
+[2023-03-06 02:40:50] [1] [INFO] PASS: keys 'rural@inbox.ru' are sent to element 'userNameInput'.
+[2023-03-06 02:40:50] [1] [INFO] PASS: keys 'testPass' are sent to element 'passwordInput'.
+[2023-03-06 02:40:51] [1] [INFO] PASS: element 'authorizeButton' is clicked.
+[2023-03-06 02:40:56] [1] [INFO] TEST [Surefire test - loginTest] PASSED at [18:40:56 2023-03-06]
