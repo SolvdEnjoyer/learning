@@ -15,9 +15,9 @@ public class ProfilePage extends AbstractPage{
 		super(driver);
 	}
 
-	public HomePage clickBodyLogOutButton() {
+	public LoginPage clickBodyLogOutButton() {
 		BodyLogOutButton.click();
-		return new HomePage(getDriver());
+		return new LoginPage(getDriver());
 		
 		
 	}

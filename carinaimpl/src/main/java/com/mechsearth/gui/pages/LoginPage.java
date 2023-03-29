@@ -17,6 +17,9 @@ public class LoginPage extends AbstractPage{
 	@FindBy(xpath = "//button[@name='login']")
 	private ExtendedWebElement authorizeButton;
 	
+	@FindBy(id = "menu-item-2639")
+	private ExtendedWebElement profileButton;
+	
 	
 	public LoginPage(WebDriver driver) {
 		super(driver);
@@ -34,7 +37,8 @@ public class LoginPage extends AbstractPage{
 		passwordInput.type(str);
 	}
 	
-	public void cliclkAuthorizeButton() {
+	public HomePage cliclkAuthorizeButton() {
 		authorizeButton.click();
+		return new HomePage(getDriver());
 	}
 }

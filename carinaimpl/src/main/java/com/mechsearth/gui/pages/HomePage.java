@@ -11,6 +11,10 @@ public class HomePage extends AbstractPage {
 	@FindBy(id = "menu-item-414")
 	private ExtendedWebElement entranceButton;
 
+	@FindBy(id = "menu-item-2639")
+	private ExtendedWebElement profileButton;
+	
+	
 	public HomePage(WebDriver driver) {
 		super(driver);
 		setPageAbsoluteURL("https://new.mechs.su/");
@@ -20,6 +24,11 @@ public class HomePage extends AbstractPage {
 		entranceButton.click();
 		return new LoginPage(getDriver());
 		
+	}
+	
+	public ProfilePage clickProfileButton() {
+		profileButton.click();
+		return new ProfilePage(getDriver());
 	}
 
 }

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import com.mechsearth.gui.pages.HomePage;
 import com.mechsearth.gui.pages.LoginPage;
+import com.mechsearth.gui.pages.ProfilePage;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
 
 public class LoginTest extends AbstractTest{
@@ -18,7 +19,12 @@ public class LoginTest extends AbstractTest{
 		LoginPage loginPage = homePage.clickEntranceButton();
 		loginPage.typeUserName("rural@inbox.ru");
 		loginPage.typePassword("ilia--112003");
-		loginPage.cliclkAuthorizeButton();
+		homePage = loginPage.cliclkAuthorizeButton();
+		ProfilePage pfp = homePage.clickProfileButton();
+		loginPage = pfp.clickBodyLogOutButton();
+		loginPage.typeUserName("rural@inbox.ru");
+		loginPage.typePassword("ilia--112003");
+		
 		Thread.sleep(4000);
 	}
 }
